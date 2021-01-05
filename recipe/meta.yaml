@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ae2d4fa2e43674dd09f015a2ab948d0e6331989cc617467043f308b6faf8ee19
+  sha256: 2e1687c15eb9f5650b2974b761cadd8ddbd115d2aec513f644bda149f24431c3
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Loading/Unloading to Redshift and Snowflake using Python'
+  summary: Loading/Unloading to Redshift and Snowflake using Python
   doc_url: https://capitalone.github.io/locopy
   dev_url: https://github.com/capitalone/locopy
 
