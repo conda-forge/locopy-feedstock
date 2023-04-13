@@ -1,11 +1,11 @@
-About locopy
-============
+About locopy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/locopy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/capitalone/locopy
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/locopy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Loading/Unloading to Redshift and Snowflake using Python
 
