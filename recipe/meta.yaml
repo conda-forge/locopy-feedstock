@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 839d671a63921edc9aab115f96646922cc1e473431278d245f70074fd573a501
+  sha256: 0ac5f5b8a0021f1a52fecfb571f327b38ed91add1bc5b3ca8d7c5fc58fd69abb
 
 build:
   noarch: python
@@ -16,13 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
-    - boto3 >=1.9.92
-    - PyYAML >=5.1
-    - pandas >=0.25.2
+    - python >=3.8
+    - boto3 <=1.26.159,>=1.9.92
+    - PyYAML <=6.0,>=5.1
+    - pandas <=2.0.2,>=0.25.2
+    - numpy <=1.25.0,>=1.22.0
 
 test:
   imports:
@@ -40,5 +41,5 @@ about:
 extra:
   recipe-maintainers:
     - fdosani
-    - elzzhu
-    - jborchma
+    - ak-gupta
+    - NikhilJArora
