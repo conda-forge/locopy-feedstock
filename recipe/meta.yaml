@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a408ed95f59872aa2b3643b1982da5de6e47e225e785db95ab639aaa7e136f41
+  sha256: 4b6b8703a27280a8bb03aa5c343f6d463b962b133f4227c3f5dabe682e61c630
 
 build:
   noarch: python
