@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - boto3 <=1.34.83,>=1.9.92
+    - boto3 <=1.34.126,>=1.9.92
     - PyYAML <=6.0.1,>=5.1
     - pandas <=2.2.2,>=0.25.2
     - numpy <=1.26.4,>=1.22.0
@@ -44,4 +44,3 @@ extra:
     - gladysteh99
     - fdosani
     - ak-gupta
-    - NikhilJArora
