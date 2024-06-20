@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.5.8" %}
+{% set version = "0.5.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: daa6f42d78a4d1d753d908e423b41bb31c837f37f98ffd882210fe1ead8b4ed4
+  sha256: 08227af342b7b4da48e0f2687fcac7e548872a7c14b8e5ef6fbd81fb035ff25c
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - boto3 <=1.34.83,>=1.9.92
+    - boto3 <=1.34.126,>=1.9.92
     - PyYAML <=6.0.1,>=5.1
     - pandas <=2.2.2,>=0.25.2
     - numpy <=1.26.4,>=1.22.0
@@ -44,4 +44,3 @@ extra:
     - gladysteh99
     - fdosani
     - ak-gupta
-    - NikhilJArora
