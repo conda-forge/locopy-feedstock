@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.6.4" %}
+{% set version = "0.6.5" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32dbe368ba71cd3a8d14f13119f603b2b41fcab31c6e56141ce36951d1d27fbf
+  sha256: e44e19ae9b0bb8c4689138f875e116f3ea06142a5d58b7f8479faee4e0505fba
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - boto3 <=1.37.17,>=1.9.92
+    - boto3 <=1.38.26,>=1.9.92
     - PyYAML <=6.0.2,>=5.1
     - pandas <=2.2.3,>=0.25.2
-    - numpy <=2.2.4,>=1.22.0
+    - numpy <=2.2.6,>=1.22.0
     - polars >=0.20.0
     - pyarrow >=10.0.1
 
