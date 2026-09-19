@@ -1,5 +1,5 @@
 {% set name = "locopy" %}
-{% set version = "0.6.8" %}
+{% set version = "0.7.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 13282800eafc998f315a0754e5500797e0fd22f5854610952501dd2b39a5fe87
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 451305ead146dd57badd289258a41f694a02908bc1dd99e34b9a87766ade2c26
 
 build:
   noarch: python
