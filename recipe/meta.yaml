@@ -1,14 +1,14 @@
 {% set name = "locopy" %}
-{% set version = "0.6.8" %}
-{% set python_min = "3.9" %}
+{% set version = "0.7.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 13282800eafc998f315a0754e5500797e0fd22f5854610952501dd2b39a5fe87
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 451305ead146dd57badd289258a41f694a02908bc1dd99e34b9a87766ade2c26
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - boto3 <=1.42.34,>=1.9.92
+    - boto3 <=1.43.95,>=1.9.92
     - PyYAML <=6.0.2,>=5.1
     - pandas <=2.3.3,>=0.25.2
     - numpy <=2.2.6,>=1.22.0
