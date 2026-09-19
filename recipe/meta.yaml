@@ -1,6 +1,6 @@
 {% set name = "locopy" %}
 {% set version = "0.7.0" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - boto3 <=1.42.34,>=1.9.92
+    - boto3 <=1.43.95,>=1.9.92
     - PyYAML <=6.0.2,>=5.1
     - pandas <=2.3.3,>=0.25.2
     - numpy <=2.2.6,>=1.22.0
